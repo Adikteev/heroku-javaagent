@@ -249,7 +249,7 @@ public class Agent {
                 System.out.print("heroku-javaagent: "); 
             } else {                
                 if(System.getenv("DYNO") != null) {                
-                    System.out.print("source=" + System.getenv("PS") + " ");
+                    System.out.print("source=" + System.getenv("DYNO") + " ");
                 }
             }
             System.out.println(msg);
