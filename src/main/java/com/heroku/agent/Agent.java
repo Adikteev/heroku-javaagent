@@ -248,7 +248,7 @@ public class Agent {
             if(legacyFmt) {
                 System.out.print("heroku-javaagent: "); 
             } else {                
-                if(System.getenv("PS") != null) {                
+                if(System.getenv("DYNO") != null) {                
                     System.out.print("source=" + System.getenv("PS") + " ");
                 }
             }
